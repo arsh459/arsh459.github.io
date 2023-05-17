@@ -19,22 +19,22 @@
         <!--==================== HEADER ====================-->
 
         <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Arsh Goyal</a>
+            <nav class="nav container" >
+                <a href="#" class="nav__logo" id="user-detail-name">Arsh Goyal<a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">
+                            <a href="#home" class="nav__link" id="home">
                                 <i class="uil uil-estate nav__icon"></i>Home
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">
+                            <a href="#about" class="nav__link about section" id="about">
                                 <i class="uil uil-user nav__icon"></i>About
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">
+                            <a href="#skills" class="nav__link" id="skills">
                                 <i class="uil uil-file-alt nav__icon"></i>Skills
                             </a>
                         </li>
@@ -44,12 +44,12 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
+                            <a href="#portfolio" class="nav__link" >
                                 <i class="uil uil-scenery nav__icon"></i>Portfolio                                
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">
+                            <a href="#contact" class="nav__link" id="contact">
                                 <i class="uil uil-message nav__icon"></i>Contact                               
                             </a>
                         </li>
@@ -71,17 +71,17 @@
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
-            <section class="home section" id="home">
+            <section class="home section" id="home" class="nav-link home">
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
-                            <a href="https://www.linkedin.com/in/arsh-goyal-nitkkr/" target="_blank" class="home__social-icon">
+                            <a href="https://www.linkedin.com/in/arsh-goyal-nitkkr/" target="_blank" class="home__social-icon"  id="contact-linkedin">
                                 <i class="uil uil-linkedin-alt"></i>
                             </a>
                             <!-- <a href="https://twitter.com/prashanna01" target="_blank" class="home__social-icon">
                                 <i class="uil uil-twitter-alt"></i>
                             </a> -->
-                            <a href="https://github.com/arsh459" target="_blank" class="home__social-icon">
+                            <a href="https://github.com/arsh459" target="_blank" class="home__social-icon" id="contact-github">
                                 <i class="uil uil-github-alt"></i>
                             </a>
                         </div>
@@ -114,7 +114,7 @@
                         </div>
                     </div>
 
-                    <div class="home__scroll">
+                    <div class="home__scroll" >
                         <a href="#about" class="home__scroll-button button--flex">
                             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                             <span class="home__scroll-name">Scroll Down</span>
@@ -125,15 +125,15 @@
             </section>
 
             <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
+            <section class="about section" id="about" class="nav-link about">
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle">My Introduction</span>
 
                 <div class="about__container container grid">
-                    <img src="packages/images/My project.jpg" alt="" class="about__img">
+                    <img src="packages/images/My project.jpg" alt="" class="about__img home-img">
                     <div class="about__data">
-                        <p class="about__description">
-                            I am from Bathinda,Punjab. I have learned Full Stack Web Development in Masai school. Skilled in problem- solving and execution of software tasks from start to finish. I look forward to joining a company where I can contribute to individual and company growth.
+                        <p class="about__description"  id="user-detail-intro">
+                            I am from Bathinda,Punjab. I have learned Full Stack Web Development in Masai school. Skilled in JavaScript, Node.js, Express.js, MongoDB, WebSockets, Redis, MySQL, Typescript, AWS, problem- solving and execution of software tasks from start to finish. I look forward to joining a company where I can contribute to individual and company growth.
                         </p>
                         <div class="about__info">
                             <!-- <div>
@@ -150,7 +150,7 @@
                             </div> -->
                         </div>
 
-                        <div class="about__buttons">
+                        <div class="about__buttons" class="nav-link resume">
                             <a download="" href="packages/pdf/Arsh-Goyal-Resume.pdf" class="button button--flex">
                                 Download CV<i class="uil uil-download-alt button__icon"></i>
                             </a>
@@ -160,7 +160,7 @@
             </section>
 
             <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+            <section class="skills section" id="skills" class="nav-link skills">
                 <h2 class="section__title">Skills</h2>
                 <span class="section__subtitle">My technical level</span>
 
@@ -705,7 +705,7 @@
         </div>
         </section>
         <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
+        <section class="portfolio section" id="portfolio projects" class="nav-link projects" >
 
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Most recent works</span>
@@ -891,7 +891,7 @@
             </section> -->
 
         <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
+        <section class="contact section" id="contact"  class="nav-link contact">
             <h2 class="section__title">Contact me</h2>
             <span class="section__subtitle">Get in touch</span>
 
@@ -902,7 +902,7 @@
 
                         <div>
                             <h3 class="contact__title">Call me</h3>
-                            <span class="contatc__subtitle">+919464979070</span>
+                            <span class="contatc__subtitle" id="contact-phone">+919464979070</span>
                         </div>
                     </div>
 
@@ -911,7 +911,7 @@
 
                         <div>
                             <h3 class="contact__title">E-mail</h3>
-                            <span class="contatc__subtitle">arshgoyal188@gmail.com</span>
+                            <span class="contatc__subtitle" id="contact-email">arshgoyal188@gmail.com</span>
                         </div>
                     </div>
 
