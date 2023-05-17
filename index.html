@@ -18,23 +18,23 @@
     <body>
         <!--==================== HEADER ====================-->
 
-        <header class="header" id="header">
-            <nav class="nav container" >
-                <a href="#" class="nav__logo" id="user-detail-name">Arsh Goyal<a>
-                <div class="nav__menu" id="nav-menu">
+        <header class="header" id="nav-menu">
+            <nav class="nav container">
+                <a href="#" class="nav__logo" id="user-detail-name">Arsh Goyal</a>
+                <div class="nav__menu" >
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link" id="home">
+                            <a href="#home" class="nav__link nav-link home">
                                 <i class="uil uil-estate nav__icon"></i>Home
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link about section" id="about">
+                            <a href="#about" class="nav__link nav-link about">
                                 <i class="uil uil-user nav__icon"></i>About
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link" id="skills">
+                            <a href="#skills" class="nav__link nav-link skills">
                                 <i class="uil uil-file-alt nav__icon"></i>Skills
                             </a>
                         </li>
@@ -44,13 +44,18 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#portfolio" class="nav__link" >
+                            <a href="#portfolio" class="nav__link nav-link projects">
                                 <i class="uil uil-scenery nav__icon"></i>Portfolio                                
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link" id="contact">
+                            <a href="#contact" class="nav__link nav-link contact">
                                 <i class="uil uil-message nav__icon"></i>Contact                               
+                            </a>
+                        </li>
+                        <li class="nav__item" >
+                            <a download="" href="packages/pdf/Arsh-Goyal-Resume.pdf" class="nav__link nav-link resume">
+                                Resume
                             </a>
                         </li>
                     </ul>
@@ -71,11 +76,11 @@
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
-            <section class="home section" id="home" class="nav-link home">
+            <section class="home section" id="home">
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
-                            <a href="https://www.linkedin.com/in/arsh-goyal-nitkkr/" target="_blank" class="home__social-icon"  id="contact-linkedin">
+                            <a href="https://www.linkedin.com/in/arsh-goyal-nitkkr/" id="contact-linkedin" target="_blank" class="home__social-icon">
                                 <i class="uil uil-linkedin-alt"></i>
                             </a>
                             <!-- <a href="https://twitter.com/prashanna01" target="_blank" class="home__social-icon">
@@ -105,7 +110,7 @@
                         </div>
 
                         <div class="home__data">
-                            <h1 class="home__title">Hi, I'am Arsh</h1>
+                            <h1 class="home__title ">Hi, I'am Arsh</h1>
                             <h3 class="home__subtitle">Full Stack Web Developer</h3>
                             <p class="home__description">Solution-driven web developer adept at contributing to highly collaborative work environment and finding solutions</p>
                             <a href="#contact" class="button button--flex home__button">
@@ -114,7 +119,7 @@
                         </div>
                     </div>
 
-                    <div class="home__scroll" >
+                    <div class="home__scroll">
                         <a href="#about" class="home__scroll-button button--flex">
                             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                             <span class="home__scroll-name">Scroll Down</span>
@@ -125,15 +130,15 @@
             </section>
 
             <!--==================== ABOUT ====================-->
-            <section class="about section" id="about" class="nav-link about">
+            <section class="about section" id="about">
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle">My Introduction</span>
 
                 <div class="about__container container grid">
                     <img src="packages/images/My project.jpg" alt="" class="about__img home-img">
                     <div class="about__data">
-                        <p class="about__description"  id="user-detail-intro">
-                            I am from Bathinda,Punjab. I have learned Full Stack Web Development in Masai school. Skilled in JavaScript, Node.js, Express.js, MongoDB, WebSockets, Redis, MySQL, Typescript, AWS, problem- solving and execution of software tasks from start to finish. I look forward to joining a company where I can contribute to individual and company growth.
+                        <p class="about__description" id="user-detail-intro">
+                            I am from Bathinda,Punjab. I have learned Full Stack Web Development in Masai school. Skilled in problem- solving and execution of software tasks from start to finish. I look forward to joining a company where I can contribute to individual and company growth.
                         </p>
                         <div class="about__info">
                             <!-- <div>
@@ -150,7 +155,7 @@
                             </div> -->
                         </div>
 
-                        <div class="about__buttons" class="nav-link resume">
+                        <div class="about__buttons">
                             <a download="" href="packages/pdf/Arsh-Goyal-Resume.pdf" class="button button--flex">
                                 Download CV<i class="uil uil-download-alt button__icon"></i>
                             </a>
@@ -160,7 +165,7 @@
             </section>
 
             <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills" class="nav-link skills">
+            <section class="skills section" id="skills">
                 <h2 class="section__title">Skills</h2>
                 <span class="section__subtitle">My technical level</span>
 
@@ -282,11 +287,11 @@
                             </div>
                             
                             <div class="skills__list grid">
-                                <div class="skills__data">
+                                <div class="skills__data skills-card">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">
+                                        <h3 class="skills__name skills-card-name">
                                             <div style="width:70px">
-                                                <img src="https://www.w3.org/html/logo/img/html5-topper.png" width="300" height="300"/>
+                                                <img src="https://www.w3.org/html/logo/img/html5-topper.png" width="300" height="300" class="skills-card-img"/>
                                             </div>
                                         </h3>
                                         <span class="skills__number">80%</span>
@@ -295,11 +300,11 @@
                                         <span class="skills__percentage skills__html"></span>
                                     </div>
                                 </div>
-                               <div class="skills__data">
+                               <div class="skills__data skills-card">
                                    <div class="skills__titles">
-                                       <h3 class="skills__name">
+                                       <h3 class="skills__name skills-card-name">
                                             <div style="width:70px">
-                                                <img src="https://w7.pngwing.com/pngs/4/808/png-transparent-css3-css3-logo-logo-language-programming-language-css-3d-icon-thumbnail.png" width="300" height="300"/>
+                                                <img src="https://w7.pngwing.com/pngs/4/808/png-transparent-css3-css3-logo-logo-language-programming-language-css-3d-icon-thumbnail.png" width="300" height="300" class="skills-card-img"/>
                                             </div>
                                         </h3>
                                        <span class="skills__number">70%</span>
@@ -308,11 +313,11 @@
                                        <span class="skills__percentage skills__css"></span>
                                    </div>
                                </div>
-                               <div class="skills__data">
+                               <div class="skills__data skills-card">
                                    <div class="skills__titles">
-                                       <h3 class="skills__name">
+                                       <h3 class="skills__name skills-card-name">
                                             <div style="width:70px">
-                                                <img src="https://w7.pngwing.com/pngs/640/199/png-transparent-javascript-logo-html-javascript-logo-angle-text-rectangle-thumbnail.png" width="300" height="300"/>
+                                                <img src="https://w7.pngwing.com/pngs/640/199/png-transparent-javascript-logo-html-javascript-logo-angle-text-rectangle-thumbnail.png" width="300" height="300" class="skills-card-img"/>
                                             </div>
                                         </h3>
                                        <span class="skills__number">80%</span>
@@ -321,11 +326,11 @@
                                        <span class="skills__percentage skills__js"></span>
                                    </div>
                                </div>
-                               <div class="skills__data">
+                               <div class="skills__data skills-card">
                                    <div class="skills__titles">
-                                        <h3 class="skills__name">
+                                        <h3 class="skills__name skills-card-name">
                                             <div style="width:70px">
-                                                <img src="packages/images/React.png" width="300" height="300"/>
+                                                <img src="packages/images/React.png" width="300" height="300" class="skills-card-img"/>
                                             </div>
                                         </h3>
                                        <span class="skills__number">70%</span>
@@ -334,11 +339,11 @@
                                        <span class="skills__percentage skills__react"></span>
                                    </div>
                                </div>
-                               <div class="skills__data">
+                               <div class="skills__data skills-card">
                                    <div class="skills__titles">
-                                        <h3 class="skills__name">
+                                        <h3 class="skills__name skills-card-name">
                                             <div style="width:70px">
-                                                <img src="https://chkrishna142.github.io/chkrishna.github.io/images/expres.png" width="300" height="300"/>
+                                                <img src="https://chkrishna142.github.io/chkrishna.github.io/images/expres.png" width="300" height="300" class="skills-card-img"/>
                                             </div>
                                         </h3>
                                        <span class="skills__number">70%</span>
@@ -347,11 +352,11 @@
                                        <span class="skills__percentage skills__react"></span>
                                    </div>
                                </div>
-                               <div class="skills__data">
+                               <div class="skills__data skills-card">
                                    <div class="skills__titles">
-                                        <h3 class="skills__name">
+                                        <h3 class="skills__name skills-card-name">
                                             <div style="width:70px">
-                                                <img src="packages/images/NodeJS.png" width="300" height="300"/>
+                                                <img src="packages/images/NodeJS.png" width="300" height="300" class="skills-card-img"/>
                                             </div>
                                         </h3>
                                        <span class="skills__number">70%</span>
@@ -360,11 +365,11 @@
                                        <span class="skills__percentage skills__react"></span>
                                    </div>
                                </div>
-                               <div class="skills__data">
+                               <div class="skills__data skills-card">
                                    <div class="skills__titles">
-                                        <h3 class="skills__name">
+                                        <h3 class="skills__name skills-card-name">
                                             <div style="width:70px">
-                                                <img src="packages/images/npm.png" width="300" height="300"/>
+                                                <img src="packages/images/npm.png" width="300" height="300" class="skills-card-img"/>
                                             </div>
                                         </h3>
                                        <span class="skills__number">70%</span>
@@ -373,11 +378,11 @@
                                        <span class="skills__percentage skills__react"></span>
                                    </div>
                                </div>
-                               <div class="skills__data">
+                               <div class="skills__data skills-card">
                                    <div class="skills__titles">
-                                        <h3 class="skills__name">
+                                        <h3 class="skills__name skills-card-name">
                                             <div style="width:70px">
-                                                <img src="packages/images/MongoDB.png" width="300" height="300"/>
+                                                <img src="packages/images/MongoDB.png" width="300" height="300" class="skills-card-img"/>
                                             </div>
                                         </h3>
                                        <span class="skills__number">70%</span>
@@ -386,11 +391,11 @@
                                        <span class="skills__percentage skills__react"></span>
                                    </div>
                                </div>
-                               <div class="skills__data">
+                               <div class="skills__data skills-card">
                                    <div class="skills__titles">
-                                        <h3 class="skills__name">
+                                        <h3 class="skills__name skills-card-name">
                                             <div style="width:70px">
-                                                <img src="https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png" width="300" height="300"/> 
+                                                <img src="https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png" width="300" height="300"class="skills-card-img"/> 
                                             </div>
                                         </h3>
                                        <span class="skills__number">70%</span>
@@ -399,11 +404,11 @@
                                        <span class="skills__percentage skills__react"></span>
                                    </div>
                                </div>
-                               <div class="skills__data">
+                               <div class="skills__data skills-card">
                                    <div class="skills__titles">
-                                        <h3 class="skills__name">
+                                        <h3 class="skills__name skills-card-name">
                                             <div style="width:70px">
-                                                <img src="https://jquery-plugins.net/image/plugin/chakra-ui-simple-modular-accessible-ui-components-for-react-applications.png" width="300" height="300"/>
+                                                <img src="https://jquery-plugins.net/image/plugin/chakra-ui-simple-modular-accessible-ui-components-for-react-applications.png" width="300" height="300" class="skills-card-img"/>
                                                 
                                             </div>
                                         </h3>
@@ -705,7 +710,7 @@
         </div>
         </section>
         <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio projects" class="nav-link projects" >
+        <section class="portfolio section" id="projects">
 
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Most recent works</span>
@@ -714,18 +719,21 @@
                 <div class="swiper-wrapper">
         <!--==================== PORTFOLIO 1 ====================-->
         
-            <div class="portfolio__content grid swiper-slide">
+            <div class="portfolio__content grid swiper-slide project-card">
                 <img src="packages/images/Quora Image.PNG" alt="" class="portfolio__img">
 
                 <div class="portfolio_">
-                    <h3 class="portfolio__title">Quora Clone</h3>
-                    <p class="portfolio__description">It's a platform to ask questions and connect with people who contribute unique insights and qualityanswers
+                    <h3 class="portfolio__title project-title">Quora Clone</h3>
+                    <p class="portfolio__description project-description">It's a platform to ask questions and connect with people who contribute unique insights and qualityanswers
                     </p>
-                    <a href="https://y-arsh459.vercel.app/"  target="_blank" class="button button--flex button--small portfolio__button">
+                    <p class="portfolio__description project-tech-stack">React | Redux
+                    </p>
+
+                    <a href="https://y-arsh459.vercel.app/"  target="_blank" class="button button--flex button--small portfolio__button project-deployed-link">
                         Demo
                         <i class="uil uil-arrow-right button__icon"></i>
                     </a>
-                    <a href="https://github.com/arsh459/Quora-Cloning"  target="_blank" class="button button--flex button--small portfolio__button">
+                    <a href="https://github.com/arsh459/Quora-Cloning"  target="_blank" class="button button--flex button--small portfolio__button project-github-link">
                         Source
                         <i class="uil uil-arrow-right button__icon"></i>
                     </a>
@@ -734,17 +742,19 @@
 
             <!--==================== PORTFOLIO 2 ====================-->
         
-            <div class="portfolio__content grid swiper-slide">
+            <div class="portfolio__content grid swiper-slide project-card">
                 <img src="packages/images/Bewakoof.PNG" alt="" class="portfolio__img">
 
                 <div class="portfolio_">
-                    <h3 class="portfolio__title">Bewakoof Clone</h3>
-                    <p class="portfolio__description">Bewakoof is the fashion e-commerce startup that stands out from the rest. It offers a trendy collection of apparels based on dazzling and upbeat designs that resonate with the millennials.</p>
-                    <a href="https://magical-creponne-d53ec4.netlify.app/" class="button button--flex button--small portfolio__button" target="_blank">
+                    <h3 class="portfolio__title project-title">Bewakoof Clone</h3>
+                    <p class="portfolio__description project-description">Bewakoof is the fashion e-commerce startup that stands out from the rest. It offers a trendy collection of apparels based on dazzling and upbeat designs that resonate with the millennials.</p>
+                    <p class="portfolio__description project-tech-stack">React | Redux
+                    </p>
+                    <a href="https://magical-creponne-d53ec4.netlify.app/" class="button button--flex button--small portfolio__button project-deployed-link" target="_blank">
                         Demo
                         <i class="uil uil-arrow-right button__icon"></i>
                     </a>
-                    <a href="https://github.com/arsh459/ConstructWeekProject_1" target="_blank" class="button button--flex button--small portfolio__button">
+                    <a href="https://github.com/arsh459/ConstructWeekProject_1" target="_blank" class="button button--flex button--small portfolio__button project-github-link">
                         Source
                         <i class="uil uil-arrow-right button__icon"></i>
                     </a>
@@ -891,7 +901,7 @@
             </section> -->
 
         <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact"  class="nav-link contact">
+        <section class="contact section" id="contact">
             <h2 class="section__title">Contact me</h2>
             <span class="section__subtitle">Get in touch</span>
 
