@@ -4,6 +4,28 @@ const navMenu = document.getElementById("nav-menu"),
   navClose = document.getElementById("nav-close")
 
 /*===== MENU SHOW =====*/
+
+/* resume-link-1 */
+var resumeLink = document.querySelector("#resume-link-1")
+resumeLink.addEventListener("click", function (event) {
+  event.preventDefault()
+  window.open(resumeLink.href, "_blank")
+  let link = document.createElement("a")
+  link.href = resumeLink.href
+  link.download = resumeLink.href
+  link.click()
+})
+
+var resumeLink2 = document.querySelector("#resume-link-2")
+resumeLink2.addEventListener("click", function (event) {
+  event.preventDefault()
+  window.open(resumeLink2.href, "_blank")
+  let link = document.createElement("a")
+  link.href = resumeLink2.href
+  link.download = resumeLink2.href
+  link.click()
+})
+
 /* Validate if constant exists */
 if (navToggle) {
   navToggle.addEventListener("click", () => {
