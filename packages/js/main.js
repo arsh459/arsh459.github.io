@@ -6,23 +6,23 @@ const navMenu = document.getElementById("nav-menu"),
 /*===== MENU SHOW =====*/
 
 /* resume-link-1 */
-var resumeLink = document.querySelector("#resume-link-1")
+var resumeLink = document.querySelector("#resume-button-1")
 resumeLink.addEventListener("click", function (event) {
   event.preventDefault()
-  window.open(resumeLink.href, "_blank")
+  window.open("packages/pdf/Arsh-Goyal-Resume.pdf", "_blank")
   let link = document.createElement("a")
-  link.href = resumeLink.href
-  link.download = resumeLink.href
+  link.href = "packages/pdf/Arsh-Goyal-Resume.pdf"
+  link.download = "packages/pdf/Arsh-Goyal-Resume.pdf"
   link.click()
 })
 
-var resumeLink2 = document.querySelector("#resume-link-2")
+var resumeLink2 = document.querySelector("#resume-button-2")
 resumeLink2.addEventListener("click", function (event) {
   event.preventDefault()
-  window.open(resumeLink2.href, "_blank")
+  window.open("packages/pdf/Arsh-Goyal-Resume.pdf", "_blank")
   let link = document.createElement("a")
-  link.href = resumeLink2.href
-  link.download = resumeLink2.href
+  link.href = "packages/pdf/Arsh-Goyal-Resume.pdf"
+  link.download = "packages/pdf/Arsh-Goyal-Resume.pdf"
   link.click()
 })
 
