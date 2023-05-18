@@ -16,15 +16,15 @@ const navMenu = document.getElementById("nav-menu"),
 //   link.click()
 // })
 
-var resumeLink2 = document.querySelector("#resume-button-2")
-resumeLink2.addEventListener("click", function (event) {
-  event.preventDefault()
-  window.open("packages/pdf/Arsh-Goyal-Resume.pdf", "_blank")
-  let link = document.createElement("a")
-  link.href = "packages/pdf/Arsh-Goyal-Resume.pdf"
-  link.download = "packages/pdf/Arsh-Goyal-Resume.pdf"
-  link.click()
-})
+// var resumeLink2 = document.querySelector("#resume-button-2")
+// resumeLink2.addEventListener("click", function (event) {
+//   event.preventDefault()
+//   window.open("packages/pdf/Arsh-Goyal-Resume.pdf", "_blank")
+//   let link = document.createElement("a")
+//   link.href = "packages/pdf/Arsh-Goyal-Resume.pdf"
+//   link.download = "packages/pdf/Arsh-Goyal-Resume.pdf"
+//   link.click()
+// })
 
 /* Validate if constant exists */
 if (navToggle) {
