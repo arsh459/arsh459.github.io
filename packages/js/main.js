@@ -4,7 +4,9 @@ const navMenu = document.getElementById("nav-menu"),
   navClose = document.getElementById("nav-close")
 
 /*===== MENU SHOW =====*/
-
+function resume() {
+  window.open("packages/pdf/Arsh-Goyal-Resume.pdf", "_blank")
+}
 /* resume-link-1 */
 // var resumeLink = document.querySelector("#resume-button-1")
 // resumeLink.addEventListener("click", function (event) {
