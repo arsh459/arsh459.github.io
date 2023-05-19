@@ -5,7 +5,10 @@ const navMenu = document.getElementById("nav-menu"),
 
 /*===== MENU SHOW =====*/
 function resume() {
-  window.open("packages/pdf/Arsh-Goyal-Resume.pdf", "_blank")
+  window.open(
+    "https://drive.google.com/file/d/1hBNfXcrx1sdpdjHbvFOurj6znJx_TQr2/view?usp=share_link",
+    "_blank"
+  )
 }
 /* resume-link-1 */
 // var resumeLink = document.querySelector("#resume-button-1")
